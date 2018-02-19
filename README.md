@@ -5,7 +5,7 @@ A high performance, in memory time series storage engine
 
 In the fall of 2015, we published the [paper “Gorilla: A Fast, Scalable, In-Memory Time Series Database”](http://www.vldb.org/pvldb/vol8/p1816-teller.pdf) at VLDB 2015. Beringei is the open source representation of the ideas presented in this paper.
 
-Beringei is a high performance time series storage engine. Time series are commonly used as a representation of statistics, gauges, and counters for monitoring performance and health of a system. 
+Beringei is a high performance time series storage engine. Time series are commonly used as a representation of statistics, gauges, and counters for monitoring performance and health of a system.
 
 ## Features
 
@@ -18,10 +18,10 @@ Beringei has the following features:
 
 ## How can I use Beringei?
 
-Beringei can be used in one of two ways. 
+Beringei can be used in one of two ways.
 
 1. We have created a simple, sharded service, and reference client implementation, that can store and serve
-time series query requests. 
+time series query requests.
 1. You can use Beringei as an embedded library to handle the low-level details of efficiently storing time series data. Using Beringei in this way is similar to [RocksDB](https://rocksdb.org) - the Beringei library can be the high performance storage system underlying your performance monitoring solution.
 
 
@@ -31,6 +31,11 @@ Beringei is tested and working on:
 
 * Ubuntu 16.10
 
+* CentOS 7.4
+
+Work in progress. boost-devel-1.53 is the latest for CentOS, Beringei depends on 1.54+.
+
+
 We also depend on these open source projects:
 
 * [fbthrift](https://github.com/facebook/fbthrift)
@@ -39,6 +44,8 @@ We also depend on these open source projects:
 * [proxygen](https://github.com/facebook/proxygen)
 * [gtest](https://github.com/google/googletest)
 * [gflags](https://github.com/gflags/gflags)
+
+
 
 ## Building Beringei
 
